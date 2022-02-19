@@ -6,10 +6,10 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 	styleUrls: ['./input.component.scss']
 })
 export class InputComponent{
-	@Input() ngModel;
+	@Input() model;
 	@Input() label;
 	@Input() placeholder;
-	@Output() ngModelChange = new EventEmitter()
+	@Output() modelChange = new EventEmitter()
 
 	constructor() {}
 }
