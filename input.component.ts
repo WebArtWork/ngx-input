@@ -11,6 +11,7 @@ export class InputComponent{
 	@Input() name = 'name';
 	@Input() type = 'text';
 	@Input() placeholder;
+	@Input() disabled;
 	@Output() modelChange = new EventEmitter()
 
 	constructor() {}
