@@ -1,4 +1,4 @@
-<label class="w-forms">
-	<span class="w-forms__title">{{label}}</span>
-	<input class="w-forms__input" type="text" name="text" [placeholder]="placeholder" [(ngModel)]="model" (ngModelChange)="modelChange.emit(model)">
+<label class="w-input">
+	<span class="w-input__title">{{label}}</span>
+	<input class="w-input__field" [type]="type" [name]="name" [placeholder]="placeholder" [(ngModel)]="model" (ngModelChange)="modelChange.emit(model)">
 </label>
