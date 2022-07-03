@@ -1,13 +1,30 @@
-#Input
+# ngx-input
 
-## Usage
-```html
-<winput [(model)]="value.input" (modelChange)="test()" label="This is a label text for input" placeholder="This is a placeholder text for input"></winput>
+## Installation
+
+```sh
+waw add ngx-input
 ```
 
+## Usage
+```
+import { InputModule } from 'src/app/modules';
+@NgModule({
+	imports: [
+		InputModule
+	]
+})
+
+```
+```html
+<winput ngDefaultControl [(ngModel)]="value.input" (ngModelChange)="function()" label="This is a label text for input" type="text" name="waw" placeholder="This is a placeholder text for input"></winput>
+```
 ## Arguments
 ```
 label: string | Displayed text
 model: string | Returns the input text
 modelChange | Called when model changes
+placeholder | Displayed input placeholder
+name | Displayed input  name
+type | Set input type
 ```
