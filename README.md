@@ -1,31 +1,31 @@
-# ngx-switch
+# ngx-input
 
 ## Installation
 
 ```sh
-waw add ngx-switch
+waw add ngx-input
 ```
-### Usage
+
+## Usage
 ```
-import { SwitchModule } from 'src/app/modules';
+import { InputModule } from 'src/app/modules';
 @NgModule({
 	imports: [
-		SwitchModule
+		InputModule
 	]
 })
 
 ```
-
 ```html
-<wswitch disabled="true" label="Sound Notification" [(wngModel)]="value.switch" (wngModelChange)="function()"></wswitch>
+<winput ngDefaultControl [(ngModel)]="value.input" disabled="true" (ngModelChange)="function()" label="This is a label text for input" type="text" name="waw" placeholder="This is a placeholder text for input"></winput>
 ```
-
 ## Arguments
 ```
-id: string
-name: string
-disabled: boolean (default: false)
 label: string | Displayed text
-wngModel: boolean | Returns the state of switch
-wngModelChange | Called when model changes
+model: string | Returns the input text
+modelChange | Called when model changes
+placeholder | Displayed input placeholder
+name | Displayed input  name
+type | Set input type
+disabled | Make input disabled
 ```
