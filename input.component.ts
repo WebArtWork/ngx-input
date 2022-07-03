@@ -8,6 +8,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class InputComponent{
 	@Input() model;
 	@Input() label;
+	@Input() name = 'name';
+	@Input() type = 'text';
 	@Input() placeholder;
 	@Output() modelChange = new EventEmitter()
 
